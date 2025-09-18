@@ -42,7 +42,7 @@ bot.on("callback_query", (query) => {
 
   if (lang === "lang_ru") {
     userLang[chatId] = "ru";
-    bot.sendMessage(chatId, "👋Приветствую!\n🤖Я – бот <b>Simply</b>, помогу сделать заказ в <b>Simply Sushi</b>🍣.\n🥢Чтобы сделать новый заказ или посмотреть меню — нажмите на кнопку ниже ⬇️⬇️⬇️", {
+    bot.sendMessage(chatId, "👋Приветствую!\n🤖Я – бот <b>Simply</b>, помогу сделать заказ в <b>Simply Sushi</b>🍣.\n🥢Чтобы сделать новый заказ или посмотреть меню — нажмите на кнопку ниже\n⬇️⬇️⬇️", {
       parse_mode: "HTML",
       reply_markup: {
         inline_keyboard: [[{ text: "Открыть", web_app: { url: "https://simplysushi.me" } }]]
@@ -50,7 +50,7 @@ bot.on("callback_query", (query) => {
     });
   } else if (lang === "lang_en") {
     userLang[chatId] = "en";
-    bot.sendMessage(chatId, "👋Welcome!\n🤖I am the <b>Simply</b> bot, here to help you place an order at <b>Simply Sushi</b>🍣.\n🥢To place a new order or view the menu, press the button below ⬇️⬇️⬇️", {
+    bot.sendMessage(chatId, "👋Welcome!\n🤖I am the <b>Simply</b> bot, here to help you place an order at <b>Simply Sushi</b>🍣.\n🥢To place a new order or view the menu, press the button below\n⬇️⬇️⬇️", {
       parse_mode: "HTML",
       reply_markup: {
         inline_keyboard: [[{ text: "Open", web_app: { url: "https://simplysushi.me/eng" } }]]
@@ -58,7 +58,7 @@ bot.on("callback_query", (query) => {
     });
   } else if (lang === "lang_exyu") {
     userLang[chatId] = "exyu"; // один язык для всех балканских
-    bot.sendMessage(chatId, "👋Dobrodošli!\n🤖Ja sam <b>Simply</b> bot i pomažem vam da napravite porudžbinu u <b>Simply Sushi</b>🍣.\n🥢Da napravite novu porudžbinu ili pogledate meni — pritisnite dugme ispod ⬇️⬇️⬇️", {
+    bot.sendMessage(chatId, "👋Dobrodošli!\n🤖Ja sam <b>Simply</b> bot i pomažem vam da napravite porudžbinu u <b>Simply Sushi</b>🍣.\n🥢Da napravite novu porudžbinu ili pogledate meni — pritisnite dugme ispod\n⬇️⬇️⬇️", {
       parse_mode: "HTML",
       reply_markup: {
         inline_keyboard: [[{ text: "Otvori", web_app: { url: "https://simplysushi.me/mne" } }]]
